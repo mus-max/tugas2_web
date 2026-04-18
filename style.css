@@ -1,6 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 p{
     text-align: justify;
@@ -9,6 +10,7 @@ p{
     width: 1000px;
     height: auto;
     margin: auto;
+    border: 1px solid #ccc;
 }
 #header{
     background-color: #0101ef;
