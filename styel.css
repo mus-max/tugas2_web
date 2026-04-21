@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+p{
+    text-align: justify;
+}
+#box{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid #ccc;
+    background : white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px;
+}
+#header{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400%;
+    animation: gradientMove 15s ease infinite;
+    padding: 50px;
+    text-align: center;
+    
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#menubar{
+    background-color: #eeeefc;
+    padding: 10px;
+    margin: auto;
+}
+#teksmenu{
+    text-decoration: none;
+    color: blue;
+}
+#konten{
+    padding: 20px;
+    flex: 1;
+}
+#footer{
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
