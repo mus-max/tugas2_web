@@ -18,6 +18,7 @@ p{
     overflow: hidden;
     box-shadow: 0 4px 20px;
 }
+
 #header{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400%;
@@ -26,23 +27,59 @@ p{
     text-align: center;
     
 }
+
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
 #menubar{
-    background-color: #eeeefc;
+    background-color: whitesmoke;
     padding: 10px;
-    margin: auto;
+    text-align: center;
 }
+
 #teksmenu{
     text-decoration: none;
     color: blue;
+    border-radius: 5px;
+    font-weight: bold;
 }
+
 #konten{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     padding: 20px;
+}
+
+#kolom-kiri #kolom-kanan{
     flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+ul{
+    padding-left: 20px;
+    line-height: 1.8;
+}
+ul li a{
+    text-decoration: none;
+    color: #23a6d5;
+    font-weight: bold;
+}
+ul li a: :hover{
+    color: #e73c7e;
+}
+#tugas {
+    padding-left: 20px;
+}
+
+.konten:hover{
+    color:#23d5ab;
+    font-weight: bold;
 }
 #footer{
     background-color: #333;
