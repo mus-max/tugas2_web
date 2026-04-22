@@ -49,17 +49,34 @@ p{
 
 #konten{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
 }
 
-#kolom-kiri #kolom-kanan{
+#isi{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#kolom-kiri, #kolom-kanan{
     flex: 1;
     background: white;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ddd;
+    box-sizing: border-box;
+    animation: munculkeatas 0.8s ease-out forwards;
+}
+@keyframes munculkeatas {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 ul{
     padding-left: 20px;
@@ -70,16 +87,29 @@ ul li a{
     color: #23a6d5;
     font-weight: bold;
 }
-ul li a: :hover{
+ul li a:hover{
     color: #e73c7e;
 }
-#tugas {
+
+.tugas {
     padding-left: 20px;
 }
 
-.konten:hover{
+.konten:hover {
     color:#23d5ab;
     font-weight: bold;
+}
+
+#box1{
+    width: fit-content;
+    margin: 20px 0;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.kembali {
+
 }
 #footer{
     background-color: #333;
