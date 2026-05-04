@@ -107,9 +107,13 @@ ul li a:hover{
     text-align: center;
     padding: 10px 20px;
 }
-
-.kembali {
-
+#Kembali {
+    text-decoration: none;
+    color: #23a6d5;
+    font-weight: bold;
+}
+#Kembali:hover{
+    color: #e73c7e;
 }
 #footer{
     background-color: #333;
